@@ -3,30 +3,58 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 4%;
 }
- .row{
+ .row,
+ .row-items-s,
+ .row-items-c,
+ .row-items-e{
  	width: 100%;
     display: block;
-    margin-bottom: 1%;
+    margin-bottom: 4%;
  }
 .col{
 	width: 100%;
-     margin-bottom: 0.5%;
+  margin-bottom: 1%;
 }
+.col:first-child {
+  margin-left: 0; 
+  }
 @media (min-width: 576px){
   .layout{
     padding: 0 1rem;
   }
-  .row{
+  .row,
+  .row-items-s,
+  .row-items-c,
+  .row-items-e{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    }
+    margin-bottom: 1%;
+  }
+  .row{
+    align-items: stretch;
+  }
+  .row-items-s{
+    align-items:flex-start;
+  }
+  .row-items-c{
+    align-items: center;
+  }
+  .row-items-e{
+    align-items:flex-end;
+  }
+  .row:last-child,
+  .row-items-s:last-child,
+  .row-items-c:last-child,
+  .row-items-b:last-child{
+    margin-bottom: 0;
+  }
     .col{
-      margin-left: 1%; }
-    .col:first-child {
-      margin-left: 0; 
-      }
+      margin-left: 1%; 
+      margin-bottom: 0;
+    }
     .one.col                    { width: 7.41666666667%; }
     .two.col                    { width: 15.83333333333%;}
     .three.col                  { width: 24.25%;         }
@@ -52,38 +80,9 @@
     .offset-ten.col             { margin-left: 84.16666666667%;}
     .offset-eleven.col          { margin-left: 92.58333333334%;}
 }
-@media (min-width: 768px) {
-  .col{
-    margin-left: 4%; }
-
-  .one.col                    { width: 4.66666666667%; }
-  .two.col                    { width: 13.3333333333%; }
-  .three.col                  { width: 22%;            }
-  .four.col                   { width: 30.6666666667%; }
-  .five.col                   { width: 39.3333333333%; }
-  .six.col                    { width: 48%;            }
-  .seven.col                  { width: 56.6666666667%; }
-  .eight.col                  { width: 65.3333333333%; }
-  .nine.col                   { width: 74.0%;          }
-  .ten.col                    { width: 82.6666666667%; }
-  .eleven.col                 { width: 91.3333333333%; }
-  .twelve.col                 { width: 100%; margin-left: 0; }
-  
-  .offset-one.col          { margin-left: 8.66666666667%; }
-  .offset-two.col          { margin-left: 17.3333333333%; }
-  .offset-three.col        { margin-left: 26%;            }
-  .offset-four.col         { margin-left: 34.6666666667%; }
-  .offset-five.col         { margin-left: 43.3333333333%; }
-  .offset-six.col          { margin-left: 52%;            }
-  .offset-seven.col        { margin-left: 60.6666666667%; }
-  .offset-eight.col        { margin-left: 69.3333333333%; }
-  .offset-nine.col         { margin-left: 78.0%;          }
-  .offset-ten.col          { margin-left: 86.6666666667%; }
-  .offset-eleven.col       { margin-left: 95.3333333333%; }
-}
 @media (min-width: 860px) {
   .layout{
     width: 90%;
-    padding: 0; 
+    padding: 0;
     }
 }

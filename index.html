@@ -1,52 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Title</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/WVP-normalize.css">
-  <link rel="stylesheet" href="css/WVP-layout.css">
-  <link rel="icon" type="image/png" href="images/favicon.png">
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/WVP-normalize.css">
+	<link rel="stylesheet" href="css/WVP-layout.css">
+	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
+
 <body>
+	<style>
+		.col{
+			min-height: 200px;
+			background: #0eb358;
+		}
+	</style>
 	<div class="layout">
+		<h1>WVP Demo</h1>
+		<h2>Simple</h2>
 		<div class="row">
-			<div class="four col" style="background-color: #442323; height: 8rem;">
-				It's simple example
-			</div>
-			<div class="four col" style="background-color: #234423;">
-				It's simple example
-			</div>
-			<div class="four col" style="background-color: #232344;">
-				It's simple example
-			</div>
-		</div>
-                <div class="row">
-			<div class="four col offset-three" style="background-color: #442323; height: 8rem;">
-				It's simple example
-			</div>
-			<div class="four col" style="background-color: #234423;">
-				It's simple example
-			</div>
-			<div class="one col" style="background-color: #232344;">
-				It's simple example
-			</div>
+			<div class="three col">Three cols</div>
+			<div class="three col">Three cols</div>
+			<div class="three col">Three cols</div>
+			<div class="three col">Three cols</div>
 		</div>
 		<div class="row">
-			<div class="six col" style="background-color: #444423; height: 20rem;">
-				It's simple example
-			</div>
-			<div class="six col" style="background-color: #234444;">
-				It's simple example
+			<div class="six col">Six cols</div>
+			<div class="six col">Six cols</div>
+		</div>
+		<div class="row">
+			<div class="six col">Six cols</div>
+			<div class="two col">Three cols</div>
+			<div class="two col">Three cols</div>
+			<div class="two col">Three cols</div>
+		</div>
+	</div>
+	<div class="layout">
+		<h2>Nest</h2>
+		<div class="row">
+			<div class="twelve col" style="min-height: 40px;">tweve cols</div>
+		</div>
+		<div class="row">
+			<div class="three col">three cols</div>
+			<div class="nine col">
+				<div class="row">
+					<div class="three col" style="background: #562323;">three cols nested</div>
+					<div class="six col" style="background: #562323;">six cols nested</div>
+					<div class="three col" style="background: #562323;">three cols nested</div>
+				</div>
+				<div class="row">
+					<div class="three col" style="background: #562323;">three cols nested</div>
+					<div class="six col" style="background: #562323;">six cols nested</div>
+					<div class="three col" style="background: #562323;">three cols nested</div>
+				</div>
 			</div>
 		</div>
-                <div class="row">
-			<div class="one col offset-eleven" style="background-color: #442323; height: 8rem;">
-				It's simple example
-			</div>
+	</div>
+	<div class="layout">
+		<h2>row containing items</h2>
+		<div class="row-items-e">
+			<div class="two col" style="min-height:auto">It is Item at center!</div>
+			<div class="two col">It is Item at center!</div>
+			<div class="two col" style="min-height:80px;">It is Item at center!</div>
+			<div class="two col" style="min-height:210px">It is Item at center!</div>
+			<div class="two col">It is Item at center!</div>
+			<div class="two col" style="min-height:100px;">It is Item at center!</div>
 		</div>
-</div>
+	</div>
 </body>
+
 </html>
