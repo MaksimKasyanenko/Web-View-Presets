@@ -27,47 +27,47 @@
     .col:first-child {
       margin-left: 0; 
       }
-    one.col                    { width: 7.41666666667%; }
-    two.col                    { width: 15.83333333333%;}
-    three.col                  { width: 24.25%;         }
-    four.col                   { width: 32.66666666667%;}
-    five.col                   { width: 41.08333333334%;}
-    six.col                    { width: 49.5%;          }
-    seven.col                  { width: 57.91666666667%;}
-    eight.col                  { width: 66.33333333334%;}
-    nine.col                   { width: 74.75%;         }
-    ten.col                    { width: 83.16666666667%;}
-    eleven.col                 { width: 91.58333333334%;}
-    twelve.col                 { width: 100%; margin-left: 0; }
+    .one.col                    { width: 7.41666666667%; }
+    .two.col                    { width: 15.83333333333%;}
+    .three.col                  { width: 24.25%;         }
+    .four.col                   { width: 32.66666666667%;}
+    .five.col                   { width: 41.08333333334%;}
+    .six.col                    { width: 49.5%;          }
+    .seven.col                  { width: 57.91666666667%;}
+    .eight.col                  { width: 66.33333333334%;}
+    .nine.col                   { width: 74.75%;         }
+    .ten.col                    { width: 83.16666666667%;}
+    .eleven.col                 { width: 91.58333333334%;}
+    .twelve.col                 { width: 100%; margin-left: 0; }
     
-    offset-one.col             { margin-left: 8.41666666667%; }
-    offset-two.col             { margin-left: 16.83333333333%;}
-    offset-three.col           { margin-left: 25.25%;         }
-    offset-four.col            { margin-left: 33.66666666667%;}
-    offset-five.col            { margin-left: 42.08333333334%;}
-    offset-six.col             { margin-left: 50.5%;          }
-    offset-seven.col           { margin-left: 58.91666666667%;}
-    offset-eight.col           { margin-left: 67.33333333334%;}
-    offset-nine.col            { margin-left: 75.75%;         }
-    offset-ten.col             { margin-left: 84.16666666667%;}
-    offset-eleven.col          { margin-left: 92.58333333334%;}
+    .offset-one.col             { margin-left: 8.41666666667%; }
+    .offset-two.col             { margin-left: 16.83333333333%;}
+    .offset-three.col           { margin-left: 25.25%;         }
+    .offset-four.col            { margin-left: 33.66666666667%;}
+    .offset-five.col            { margin-left: 42.08333333334%;}
+    .offset-six.col             { margin-left: 50.5%;          }
+    .offset-seven.col           { margin-left: 58.91666666667%;}
+    .offset-eight.col           { margin-left: 67.33333333334%;}
+    .offset-nine.col            { margin-left: 75.75%;         }
+    .offset-ten.col             { margin-left: 84.16666666667%;}
+    .offset-eleven.col          { margin-left: 92.58333333334%;}
 }
 @media (min-width: 768px) {
   .col{
     margin-left: 4%; }
 
-  one.col                    { width: 4.66666666667%; }
-  two.col                    { width: 13.3333333333%; }
-  three.col                  { width: 22%;            }
-  four.col                   { width: 30.6666666667%; }
-  five.col                   { width: 39.3333333333%; }
-  six.col                    { width: 48%;            }
-  seven.col                  { width: 56.6666666667%; }
-  eight.col                  { width: 65.3333333333%; }
-  nine.col                   { width: 74.0%;          }
-  ten.col                    { width: 82.6666666667%; }
-  eleven.col                 { width: 91.3333333333%; }
-  twelve.col                 { width: 100%; margin-left: 0; }
+  .one.col                    { width: 4.66666666667%; }
+  .two.col                    { width: 13.3333333333%; }
+  .three.col                  { width: 22%;            }
+  .four.col                   { width: 30.6666666667%; }
+  .five.col                   { width: 39.3333333333%; }
+  .six.col                    { width: 48%;            }
+  .seven.col                  { width: 56.6666666667%; }
+  .eight.col                  { width: 65.3333333333%; }
+  .nine.col                   { width: 74.0%;          }
+  .ten.col                    { width: 82.6666666667%; }
+  .eleven.col                 { width: 91.3333333333%; }
+  .twelve.col                 { width: 100%; margin-left: 0; }
   
   .offset-one.col          { margin-left: 8.66666666667%; }
   .offset-two.col          { margin-left: 17.3333333333%; }
