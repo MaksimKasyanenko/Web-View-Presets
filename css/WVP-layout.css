@@ -51,6 +51,7 @@
   .row-items-b:last-child{
     margin-bottom: 0;
   }
+
     .col{
       margin-left: 1%; 
       margin-bottom: 0;
@@ -79,6 +80,16 @@
     .offset-nine.col            { margin-left: 75.75%;         }
     .offset-ten.col             { margin-left: 84.16666666667%;}
     .offset-eleven.col          { margin-left: 92.58333333334%;}
+
+    .col.align-s{
+      align-self: flex-start;
+    }
+    .col.align-c{
+      align-self: center;
+    }
+    .col.align-e{
+      align-self: flex-end;
+    }
 }
 @media (min-width: 860px) {
   .layout{
