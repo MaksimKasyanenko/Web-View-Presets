@@ -14,7 +14,7 @@
 
 <body>
 	<style>
-		.col{
+		.row > *, .row-items-e > *{
 			min-height: 200px;
 			background: #0eb358;
 		}
@@ -23,39 +23,39 @@
 		<h1>WVP Demo</h1>
 		<h2>Simple</h2>
 		<div class="row">
-			<div class="three col">Three cols</div>
-			<div class="three col">Three cols</div>
-			<div class="three col">Three cols</div>
-			<div class="three col">Three cols</div>
+			<div class="w-3">Three cols</div>
+			<div class="w-3">Three cols</div>
+			<div class="w-3">Three cols</div>
+			<div class="w-3">Three cols</div>
 		</div>
 		<div class="row">
-			<div class="six col">Six cols</div>
-			<div class="six col">Six cols</div>
+			<div  class="w-6">Six cols</div>
+			<div class="w-6">Six cols</div>
 		</div>
 		<div class="row">
-			<div class="six col">Six cols</div>
-			<div class="two col">Three cols</div>
-			<div class="two col">Three cols</div>
-			<div class="two col">Three cols</div>
+			<div class="w-6">Six cols</div>
+			<div class="w-2">Two cols</div>
+			<div class="w-2">Two cols</div>
+			<div class="w-2">Two cols</div>
 		</div>
 	</div>
 	<div class="layout">
 		<h2>Nest</h2>
 		<div class="row">
-			<div class="twelve col" style="min-height: 40px;">tweve cols</div>
+			<div class="w-12" style="min-height: 40px;">tweve cols</div>
 		</div>
 		<div class="row">
-			<div class="three col">three cols</div>
-			<div class="nine col">
+			<div class="w-3">three cols</div>
+			<div class="w-9">
 				<div class="row">
-					<div class="three col" style="background: #562323;">three cols nested</div>
-					<div class="six col" style="background: #562323;">six cols nested</div>
-					<div class="three col" style="background: #562323;">three cols nested</div>
+					<div class="w-3" style="background: #562323;">three cols nested</div>
+					<div class="w-6" style="background: #562323;">six cols nested</div>
+					<div class="w-3" style="background: #562323;">three cols nested</div>
 				</div>
 				<div class="row">
-					<div class="three col" style="background: #562323;">three cols nested</div>
-					<div class="six col" style="background: #562323;">six cols nested</div>
-					<div class="three col" style="background: #562323;">three cols nested</div>
+					<div class="w-3" style="background: #562323;">three cols nested</div>
+					<div class="w-6" style="background: #562323;">six cols nested</div>
+					<div class="w-6" style="background: #562323;">three cols nested</div>
 				</div>
 			</div>
 		</div>
@@ -63,12 +63,12 @@
 	<div class="layout">
 		<h2>row containing items</h2>
 		<div class="row-items-e">
-			<div class="two col" style="min-height:auto">It is Item!</div>
-			<div class="two col">It is Item!</div>
-			<div class="two col align-s" style="min-height:80px;">This item is self-aligned</div>
-			<div class="two col" style="min-height:210px">It is Item!</div>
-			<div class="two col">It is Item!</div>
-			<div class="two col" style="min-height:100px;">It is Item!</div>
+			<div class="w-2" style="min-height:auto">It is Item!</div>
+			<div class="w-2">It is Item!</div>
+			<div class="w-2 align-s" style="min-height:80px;">This item is self-aligned</div>
+			<div class="w-2" style="min-height:210px">It is Item!</div>
+			<div class="w-2">It is Item!</div>
+			<div class="w-2" style="min-height:100px;">It is Item!</div>
 		</div>
 	</div>
 </body>
