@@ -1,75 +1,51 @@
 .layout {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-bottom: 4%;
+  position:   relative;
+  width:      100%;
+  max-width:  1200px;
+  padding:    0 1%;
+  margin:     0 auto;
+  margin-top: 4%;
 }
 
- .row,
- .row-items-s,
- .row-items-c,
- .row-items-e{
- 	width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    margin-bottom: 4%;
- }
-
-.row > *,
-.row-items-s > *,
-.row-items-c > *,
-.row-items-e > *{
-  margin-bottom: 1%;
+.row{
+  width:       100%;
+  display:     flex;
+  flex-flow:   column nowrap;
+  align-items: stretch;
+  margin-top:  4%;
 }
-.row > :first-child,
-.row-items-s > :first-child,
-.row-items-c > :first-child,
-.row-items-e > :first-child{
-  margin-left: 0; 
+.row.items-s{
+  align-items: flex-start;
+}
+.row.items-c{
+  align-items: center;
+}
+.row.items-e{
+  align-items: flex-end;
+}
+
+.layout:first-child,
+.row:first-child{
+  margin-top: 0;
+}
+
+.row > *:not(:first-child){
+  margin-top: 1%;
 }
 
 @media (min-width: 576px){
-  .layout{
-    padding: 0 1rem;
-  }
-
-  .row,
-  .row-items-s,
-  .row-items-c,
-  .row-items-e{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    margin-bottom: 1%;
-  }
   .row{
-    align-items: stretch;
-  }
-  .row-items-s{
-    align-items:flex-start;
-  }
-  .row-items-c{
-    align-items: center;
-  }
-  .row-items-e{
-    align-items:flex-end;
-  }
-  .row:last-child,
-  .row-items-s:last-child,
-  .row-items-c:last-child,
-  .row-items-b:last-child{
-    margin-bottom: 0;
+    flex-flow:       row nowrap;
+    justify-content: flex-start;
   }
 
-    .row > *,
-    .row-items-s > *,
-    .row-items-c > *,
-    .row-items-e > *{
-      margin-left: 1%; 
-      margin-bottom: 0;
-    }
+  .row > *{
+    margin-left: 1%; 
+    margin-top:  0;
+  }
+  .row > :first-child{
+    margin-left: 0;
+  }
 
     .w-1   { width: 7.41666666667%; }
     .w-2   { width: 15.83333333333%;}
@@ -98,7 +74,7 @@
 }
 @media (min-width: 860px) {
   .layout{
-    width: 90%;
+    width: 92%;
     padding: 0;
     }
 }
