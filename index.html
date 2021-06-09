@@ -7,20 +7,41 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/WVP-normalize.css">
-	<link rel="stylesheet" href="css/WVP-layout.css">
+	<link rel="stylesheet" href="css/snail-normalize.css">
+	<link rel="stylesheet" href="css/snail-layout.css">
 	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
 	<style>
-		.row > *, .row-items-e > *{
+		.row > *:not(header *), .row.items-e > *{
 			min-height: 200px;
 			background: #0eb358;
 		}
+		header{
+			background: #45afcc;
+			padding: 2rem !important;
+		}
+		.row.elements > *{
+			background: #aaaaaa;
+			border: 1px solid black;
+		}
 	</style>
+	<header class="layout">
+		<div class="row between items-c">
+			<h1>Welcome!</h1>
+			<p>Snail Demo Page</p>
+		</div>
+		<div class="row elements">
+			<div>Element1</div>
+			<div>Element2</div>
+			<div>Element3</div>
+			<div>Element4</div>
+			<div>Element5</div>
+			<div>Element6</div>
+		</div>
+	</header>
 	<div class="layout">
-		<h1>WVP Demo</h1>
 		<h2>Simple</h2>
 		<div class="row">
 			<div class="w-3">Three cols</div>
@@ -62,7 +83,7 @@
 	</div>
 	<div class="layout">
 		<h2>row containing items</h2>
-		<div class="row-items-e">
+		<div class="row items-e">
 			<div class="w-2" style="min-height:auto">It is Item!</div>
 			<div class="w-2">It is Item!</div>
 			<div class="w-2 align-s" style="min-height:80px;">This item is self-aligned</div>
