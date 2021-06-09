@@ -1,19 +1,22 @@
 .layout {
-  position:   relative;
-  width:      100%;
-  max-width:  1200px;
-  padding:    0 1%;
-  margin:     0 auto;
+  position:      relative;
+  width:         100%;
+  max-width:     1200px;
+  padding:       0 1%;
+  margin:        0 auto;
   margin-bottom: 4%;
+}
+.layout:last-child{
+  margin-bottom: 0;
 }
 
 .row{
-  width:       100%;
-  display:     flex;
-  flex-flow:   column nowrap;
-  align-items: stretch;
+  width:           100%;
+  display:         flex;
+  flex-flow:       column nowrap;
+  align-items:     stretch;
   justify-content: flex-start;
-  margin-top:  2%;
+  margin-top:      2%;
 }
 .row > *{
   margin-top: 1%;
@@ -37,13 +40,13 @@
 	justify-content: space-between;
 }
 .row.elements{
-	flex-flow: row nowrap !important;
+	flex-flow:   row nowrap !important;
 	align-items: stretch;
 }
 .row.elements > *{
-	flex: 1;
-	margin-left: 1%;
-	margin-top: 0 !important;
+	flex:         1;
+	margin-left:  1%;
+	margin-top:   0 !important;
 }
 .row.elements :first-child{
 	margin-left: 0;
@@ -51,7 +54,7 @@
 
 @media (min-width: 576px){
   .row{
-    flex-flow:       row nowrap;
+    flex-flow: row nowrap;
   }
 
   .row > *{
@@ -89,7 +92,7 @@
 }
 @media (min-width: 860px) {
   .layout{
-    width: 92%;
+    width:   92%;
     padding: 0;
     }
 }
