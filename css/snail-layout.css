@@ -4,7 +4,7 @@
   max-width:  1200px;
   padding:    0 1%;
   margin:     0 auto;
-  margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 .row{
@@ -14,6 +14,15 @@
   align-items: stretch;
   justify-content: flex-start;
   margin-top:  2%;
+}
+.row > *{
+  margin-top: 1%;
+}
+.row > :first-child{
+	margin-top: 0;
+}
+.row:first-child{
+	margin-top: 0;
 }
 .row.items-s{
   align-items: flex-start;
@@ -27,17 +36,17 @@
 .row.between{
 	justify-content: space-between;
 }
-
-.layout:first-child,
-.row:first-child{
-  margin-top: 0;
+.row.elements{
+	flex-flow: row nowrap !important;
+	align-items: stretch;
 }
-
-.row > *{
-  margin-top: 1%;
+.row.elements > *{
+	flex: 1;
+	margin-left: 1%;
+	margin-top: 0 !important;
 }
-.row > :first-child{
-	margin-top: 0;
+.row.elements :first-child{
+	margin-left: 0;
 }
 
 @media (min-width: 576px){
